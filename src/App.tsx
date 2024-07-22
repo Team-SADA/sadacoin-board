@@ -45,7 +45,7 @@ function App() {
                     <th>학번</th>
                     <th>이름</th>
                     <th>코인</th>
-                    <th className={"reward"}>상품</th>
+                    {/*<th className={"reward"}>상품</th>*/}
                 </tr>
                 {board.map((line, index) => (
                     <tr>
@@ -53,7 +53,7 @@ function App() {
                         <td>{line.id}</td>
                         <td>{line.name}</td>
                         <td>{line.coin}<img src={"./coin.png"} alt={"coin"}/></td>
-                        <td className={"reward"}>{index < 5 ? reward[index] : ''}</td>
+                        {/*<td className={"reward"}>{index < 5 ? reward[index] : ''}</td>*/}
                     </tr>
                 ))}
                 </tbody>
