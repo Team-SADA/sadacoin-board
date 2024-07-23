@@ -18,11 +18,11 @@ export default function Issue() {
     return (
         <div className="Issue">
             <h1>
-                SADA 인증번호 발급
+                <span>필수</span> SADA 인증번호 발급
             </h1>
             <p>
-                부스를 열심히 플레이하면 뚜레주르 케이크까지?<br/>
-                부스를 이용하려면 인증번호를 발급받아야 합니다!
+                부스를 이용하려면 인증번호를 발급받아야 합니다!<br/>
+                타인의 정보를 입력할 경우 불이익이 있습니다.
             </p>
             <div className={"form"}>
                 <input type={"text"} id={'studentid'} placeholder={"학번 (교사/외부인이라면 비워두세요)"} onKeyPress={(event) => {
@@ -34,12 +34,19 @@ export default function Issue() {
                        onChange={(e) => setName(e.target.value)}/>
                 <button onClick={submit}>발급</button>
             </div>
+            <p>
+                한/영 전환은 Caps Lock 키를 눌러야 합니다.<br/>
+                마우스 커서가 보이지 않는다면, <br/>
+                마우스를 쭉 오른쪽으로 움직여보세요.
+            </p>
             <div className={"show"}>
                 <div className={"showNum"}>
                     {val == null ? "?" : val}
                 </div>
                 <p>
-                    부스를 즐길 때 필요하니 꼭 외워 두세요!
+                    부스를 즐길 때 필요하니 꼭 외워 두세요!<br/>
+                    게임에서 입력 받는 대부분의 번호는 <br/>
+                    모두 이 인증 번호입니다!
                 </p>
             </div>
         </div>
