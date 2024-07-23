@@ -7,7 +7,7 @@ interface UserData {
     name: string
     coin: number
 }
-
+/*
 const reward: string[] = [
     '뚜레쥬르 사르르 샤샤핑 케이크',
     '맘스터치 싸이버거 세트',
@@ -15,7 +15,7 @@ const reward: string[] = [
     '오양갈비만두(냉동) 2팩(12개)',
     '짜파게티 범벅(소) + 참깨라면(대)'
 ]
-
+*/
 function App() {
     const [board, setBoard] = useState<UserData[]>([]);
     const [searchText, setSearchText] = useState<string>("");
